@@ -13,10 +13,10 @@ fn constants() {
 fn shadowing_variables() {
     let x = 5;
 
-    let x = x + 1; // shadows former X
+    let x = x + 1;
 
     {
-        let x = x * 2;
+        let x = x * 2; // shadows former X
         println!("The value of x in the inner scope is: {x}");
     }
 
